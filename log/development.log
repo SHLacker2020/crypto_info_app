@@ -1,0 +1,30 @@
+  [1m[35m (313.7ms)[0m  [1m[35mCREATE DATABASE "crypto_info_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (327.5ms)[0m  [1m[35mCREATE DATABASE "crypto_info_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-02-10 06:38:01 -0500
+
+Zeitwerk::NameError - expected file /home/the_shlacker/ubuntu_desktop/github_repos/my_apps/crypto_info_app/app/helpers/crypto_currenies_helper.rb to define constant CryptoCurreniesHelper, but didn't
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^:
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/crypto_currencies_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/c09fb329961e8802/variables" for ::1 at 2023-02-10 06:38:02 -0500
+Started POST "/__better_errors/c09fb329961e8802/variables" for ::1 at 2023-02-10 06:38:20 -0500
+Started GET "/" for ::1 at 2023-02-10 06:39:56 -0500
+Processing by CryptoCurrenciesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering crypto_currencies/index.html.erb within layouts/application
+  Rendered crypto_currencies/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 882)
+  Rendered layout layouts/application.html.erb (Duration: 529.3ms | Allocations: 8896)
+Completed 200 OK in 534ms (Views: 531.7ms | ActiveRecord: 0.0ms | Allocations: 11295)
+
+
+Started GET "/" for ::1 at 2023-02-10 06:45:02 -0500
+Processing by CryptoCurrenciesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering crypto_currencies/index.html.erb within layouts/application
+  Rendered crypto_currencies/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 887)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4461)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 6837)
+
+
